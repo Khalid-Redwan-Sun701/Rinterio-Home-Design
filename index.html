@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio Designs</title>
+
+    <!-- DaisyUi CDN -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-manrope {
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+
+    <!-- Try customizing your tailwind config -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'h-grad-from': 'rgb(255, 255, 255)',
+              'h-grad-to': 'rgba(255, 255, 255, 0)',
+              'main-font-color': '#212121',
+              'green-btn-bg': '#ABEF5F',
+              'deep-ash':'#494949',
+              'light-ash':'#737373',
+            },
+          },
+        },
+      };
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/ff302c5708.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="font-manrope main-font-color">
+    <!-- bg-gradient-to-r from-h-grad-from to-h-grad-to -->
+    <header class="  bg-gradient-to-r from-slate-50 to-slate-100 pb-28  ">
+      <div   class="  container  mx-auto">
+        <!--  <i class="fa-solid fa-arrow-right fa-rotate-by rounded-full    bg-green-btn-bg p-2  " style="--fa-rotate-angle: -45deg;""></i>  -->
+
+        <div class="navbar  ">
+          <div class="navbar-start">
+            
+            <i class="fa-solid fa-arrow-right fa-rotate-by rounded-full m-3   bg-green-btn-bg p-2  " style="--fa-rotate-angle: -45deg;""></i> 
+            <a class="text-[32px] font-extrabold">Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex  " >
+            <ul class="menu menu-horizontal px-1">
+                <li><a  class="text-base font-extrabold text-[#494949] " >Home</a></li>
+                <li>
+                  <a class="text-base  font-normal text-light-ash">Services</a>
+                 
+                </li>
+                <li><a class="text-base  font-normal  text-light-ash">Portfolio</a></li>
+                <li><a  class="text-base  font-normal  text-light-ash">Blogs</a></li>
+                <li><a class="text-base  font-normal  text-light-ash">Contact Us</a></li>
+                
+                
+            </ul>
+          </div>
+          
+
+              <div class="navbar-end hidden lg:flex flex-nowrap items-center space-x-4">
+                <ul class="menu menu-horizontal  rounded-box pr-12 flex-nowrap">
+                  <li>
+                    <a class="text-light-ash">
+                      <span><i class="fa-solid fa-magnifying-glass rounded-full p-2 bg-[#FFFFFF]"></i></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="">
+                      <span class="rounded-full p-[5px] bg-[#FFFFFF]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="bg-green-btn-bg rounded-3xl font-extrabold px-3 py-1">Book Consult
+                      <span>
+                        <i class="fa-solid fa-arrow-right fa-rotate-by rounded-full m-0.5 bg-[#1C1C1C] p-2 text-white" style="--fa-rotate-angle: -45deg;"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div  class="navbar-end flex md:hidden" >
+
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16"
+                      />
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  right-0  w-52 p-2 shadow"
+                  >
+                  <li><a  class="text-base font-extrabold text-[#494949] " >Home</a></li>
+                  <li>
+                    <a class="text-base  font-normal text-light-ash">Services</a>
+                   
+                  </li>
+                  <li><a class="text-base  font-normal  text-light-ash">Portfolio</a></li>
+                  <li><a  class="text-base  font-normal  text-light-ash">Blogs</a></li>
+                  <li><a class="text-base  font-normal  text-light-ash">Contact Us</a></li>
+                  <li><a class=" text-base  font-normal  text-light-ash" >Search<span><i class="fa-solid fa-magnifying-glass p-1"></i></span> </a></li>
+                  <li><a class="text-end  text-base  font-normal  text-light-ash" >Cart<span class="rounded-full  bg-[#FFFFFF]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" size-6 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+                  </span> </a></li>
+                  <li><a class=" text-end text-base  font-normal  text-light-ash ">Book Consult<span><i class="fa-solid fa-arrow-right fa-rotate-by rounded-full  p-2 text-black  " style="--fa-rotate-angle: -45deg;""></i></span>    </a></li>
+                  </ul>
+                </div>
+
+
+
+
+              </div>
+              
+<!--  -->
+
+              
+
+          </div>
+
+
+
+
+
+        </div>
+
+
+        <!-- Banner Section -->
+         <!-- Banner picture -->
+         <div  class="container mx-auto" >
+          <div  class=" w-5/6   lg:w-2/5   mx-auto my-6">
+            <img class="w-full" src="./assets/banner.png" alt="">
+          </div>
+
+          <!-- Banner Text -->
+          <div class="mx-3">
+
+            <h2 class="text-center text-[#212121]  text-[28px] lg:text-[64px] font-black mb-6  "  >A barn house of this design  has a  striking appearance</h2>
+            <p   class="text-center  text-[#494949] text-[14px] lg:text-base  font-medium mb-6   ">Experience modern living with rustic charm. Our barn houses blend tradition with contemporary design for a home like no other !</p>
+
+            <div class="flex justify-center">
+              <a class="bg-lime-200 rounded-[32px] font-extrabold px-2 py-2 w-full  lg:w-1/5 text-center text-[20px]">View Details
+                <span>
+                  <i class="fa-solid fa-arrow-right fa-rotate-by rounded-full m-0.5 bg-lime-300 p-2 text-black" style="--fa-rotate-angle: -45deg;"></i>
+                </span>
+              </a>
+            </div>
+
+          </div>
+
+          
+
+         </div>
+        
+
+
+
+
+
+     </div>
+
+
+      
+      
+
+
+      
+    </header>
+    <main>
+      <!-- Thoughtful Liveable space -->
+      <section class="bg-zinc-200">
+        
+         
+        <div class="container mx-auto p-5">
+
+          <div class="relative">
+
+            <!-- Spiral Arrow Sign -->
+
+       
+          <div class="max-w-16 max-h-28 hidden lg:flex  absolute top-1 left-8">
+            <img class="w-full" src="assets/Vector.png" alt="">
+           </div>
+        
+
+          <!-- About Us button -->
+         <div class="lg:p-8 flex justify-center lg:justify-start">
+
+          <div class=" ">
+            <a class="bg-white rounded-[24px] font-extrabold px-3 py-2 w-full  lg:w-1/5 text-center text-base"> <span>
+              <i class="fa-solid fa-arrow-right  m-0.5  p-1 text-black" ></i>
+            </span> About Us</a>
+
+              
+           
+         </div>
+
+
+
+         </div>
+
+          </div>
+
+          
+
+          <!-- Thoughtful Liveable space Grid -->
+          <div  class="grid lg:grid-cols-2">
+
+            <!-- column 1 -->
+
+            <!-- column1 Title and Subtitle -->
+             <div class="p-8 flex items-center  ">
+
+              <!-- Align Items and justify content of column 1 in the middle  -->
+
+              <div >
+
+                <h2 class=" text-[#212121] text-[27px] lg:text-[32px] font-extrabold  text-center  lg:text-left mb-6 ">We design thoughtful,<br>liveable spaces</h2>
+                <p class=" text-[#494949] text-[14px] lg:text-base font-medium text-center  lg:text-left  mb-6">Every space we design balances beauty and functionality, ensuring comfort and style. We create homes that inspire, with a perfect blend of modern elegance and practical living.</p>
+
+              <!-- Point 1 & Point 2 -->
+               <div  class=" p-1 lg:p-6 flex flex-col  gap-y-4 ">
+
+                <!-- point-1 -->
+                <!-- image and point description -->
+                <div   class="flex flex-row items-center justify-center bg-white rounded-2xl p-5 ">
+                  <!-- image container -->
+                  <div class=" w-1/4 lg:w-1/6  mr-4 lg:p-4">
+                    <img class="w-full" src="assets/commercial.png" alt="">
+
+                  </div>
+                  <!-- Point Description -->
+                   <div>
+                    <h3 class=" text-[#494949] text-[20px]     font-extrabold">Commercial</h3>
+                    <p  class="    text-base    text-[#737373] font-medium">Transforming commercial spaces into vibrant, branded environments hub.</p>
+                   </div>
+
+
+                </div>
+
+
+
+                <!-- point-2 -->
+                <!-- image and point description -->
+                <div  class="flex flex-row items-center justify-center bg-white rounded-2xl p-5">
+                  <!-- image container -->
+                  <div class="w-1/4 lg:w-1/6 mr-6 lg:mr-4 lg:p-4">
+                    <img class="w-full" src="assets/residential.png" alt="">
+
+                  </div>
+                  <!-- Point Description -->
+                   <div>
+                    <h3 class=" text-[#494949] text-[20px]     font-extrabold">Residential</h3>
+                    <p  class="    text-base    text-[#737373] font-medium">Creating personalized, stylish homes that blend comfort with timeless elegance  .</p>
+                   </div>
+
+
+                </div>
+
+               </div>
+
+
+              </div>
+              
+
+              
+
+             </div>
+
+            <!-- column 2 -->
+            <div  class="lg:px-10  flex items-center justify-center"  >
+
+              <div  >
+                <!-- image div -->
+                <div class="w-full lg:w-auto max-w-sm lg:max-w-full  rounded-xl shadow-lg">
+                  <img class="w-full  " src="assets/Rectangle.png" alt="">
+                </div>
+
+              </div>
+              
+              
+            </div>
+
+
+
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+      <!--  Working Process Section -->
+
+      <section class="bg-zinc-200" >
+        <div class="container mx-auto px-5 py-40">
+          <!-- How We Works Button -->
+          <div class="lg:p-8 flex justify-center my-0 ">
+
+            <div class=" ">
+              <a class="bg-white rounded-[24px] font-extrabold px-3 py-2 w-full  lg:w-1/5 text-center text-base"> <span>
+                <i class="fa-solid fa-arrow-right  m-0.5  p-1 text-black" ></i>
+              </span> How we work</a>
+  
+                
+             
+           </div>
+  
+  
+  
+           </div>
+
+           <h1  class=" my-5 text-center font-extrabold text-[24px] lg:text-[40px] ">Our Works Process</h1>
+           <p class=" my-5 text-center text-[#494949] text-[14px] lg:text-base">Our experts meticulously plan, design, and execute each project, ensuring seamless transformation of commercial and residential spaces into functional, stylish environments tailored to your unique needs and vision.</p>
+
+           <!-- Card Div -->
+            <div class="grid lg:grid-cols-4 gap-x-5 gap-y-6 py-5" >
+              <!-- Card 1 -->
+               <div class="px-3 py-5 bg-[#E7C1D3] border rounded-2xl">
+
+                <div class="flex flex-col justify-start">
+                  <!-- image -->
+                   <div class="w-1/4" >
+                    <img class="w-full" src="assets/concept.png" alt="">
+                   </div>
+
+                   <div class="px-2 py-3" >
+
+                    <!-- card title -->
+                    <h2 class="text-[20px] font-extrabold">Concept</h2>
+
+                   <!-- card description -->
+                    <p class="text-[#494949] text-base py-2">Collaborating with clients to merge their ideas with our expert insights.</p>
+
+                   </div>
+
+                   
+                </div>
+
+               </div>
+
+               <!-- card 2 -->
+
+               <div class="px-3 py-5 bg-[#EFDA6E] border rounded-2xl">
+
+                <div class="flex flex-col justify-start">
+                  <!-- image -->
+                   <div class="w-1/4" >
+                    <img class="w-full" src="assets/flow-chart.png" alt="">
+                   </div>
+
+                   <div class="px-2 py-3" >
+
+                    <!-- card title -->
+                    <h2 class="text-[20px] font-extrabold">Design Process</h2>
+
+                   <!-- card description -->
+                    <p class="text-[#494949] text-base py-2">Transforming concepts into detailed designs through expert's creativity.</p>
+
+                   </div>
+
+                   
+                </div>
+
+               </div>
+
+               <!-- Card 3 -->
+
+               <div class="px-3 py-5 bg-[#A4DAC3] border rounded-2xl">
+
+                <div class="flex flex-col justify-start">
+                  <!-- image -->
+                   <div class="w-1/4" >
+                    <img class="w-full" src="assets/vision.png" alt="">
+                   </div>
+
+                   <div class="px-2 py-3" >
+
+                    <!-- card title -->
+                    <h2 class="text-[20px] font-extrabold">Supervision</h2>
+
+                   <!-- card description -->
+                    <p class="text-[#494949] text-base py-2">Overseeing every detail to ensure design accuracy and project quality.</p>
+
+                   </div>
+
+                   
+                </div>
+
+               </div>
+
+               <!-- Card 4 -->
+               <div class="px-3 py-5 bg-[#77AAEA] border rounded-2xl">
+
+                <div class="flex flex-col justify-start">
+                  <!-- image -->
+                   <div class="w-1/4" >
+                    <img class="w-full" src="assets/budget-planning.png" alt="">
+                   </div>
+
+                   <div class="px-2 py-3" >
+
+                    <!-- card title -->
+                    <h2 class="text-[20px] font-extrabold">Budget Planning</h2>
+
+                   <!-- card description -->
+                    <p class="text-[#494949] text-base py-2">Creating cost-effective budgets to align with client needs and expectations.</p>
+
+                   </div>
+
+                   
+                </div>
+
+               </div>
+
+
+
+              
+
+
+            </div>
+
+
+          
+        </div>
+      </section>
+
+
+
+      <!-- Latest Portfolio Section -->
+       <section class="bg-zinc-200 lg:bg-white">
+        <div class="container mx-auto px-5 py-16 ">
+
+          <!-- Latest works Button -->
+          <div class="lg:p-8 flex justify-center my-0 ">
+
+            <div class=" ">
+              <a class="bg-lime-200 rounded-[24px] font-extrabold px-3 py-2 w-full  lg:w-1/5 text-center text-base"> <span>
+                <i class="fa-solid fa-arrow-right  m-0.5  p-1 text-black" ></i>
+              </span>Explore our Latest works</a>
+  
+                
+             
+           </div>
+  
+  
+  
+           </div>
+
+           <h1  class=" my-5 text-center font-extrabold text-[24px] lg:text-[40px] ">Our Latest Portfolio</h1>
+           <p class=" my-5 text-center text-[#494949] text-[14px] lg:text-base">Explore our latest portfolio to see how we've transformed residential and commercial spaces into stunning, functional environments tailored to our clients'  visions and needs.</p>
+
+           <!-- 1st Grid -->
+
+           <div class="grid lg:grid-cols-12 py-4 gap-x-4 gap-y-4 ">
+            <!-- Left-column -->
+            <div   class="lg:col-span-8 p-6 border rounded-2xl bg-white  border-[#e9e9e9]  ">
+
+              <div class="grid lg:grid-cols-3 gap-x-5 gap-y-4  ">
+                <!-- Image Container -->
+                <div  class=" flex items-stretch">
+                  <img class="w-full" src="assets/img1.png" alt="">
+                </div>
+                <!-- Text container -->
+                 <div  class="lg:col-span-2 px-2  flex flex-col justify-start gap-y-10 ">
+                  <h3 class="text-[24px] font-extrabold text-[#494949]">Commercial</h3>
+                  <p>Discover our latest commercial space design project! Join us to see how we blended creativity and functionality to transform a vision into reality.</p>
+                  <a class=" font-extrabold   text-[20px]">View Details
+                    <span>
+                      <i class="fa-solid fa-arrow-right fa-rotate-by rounded-full m-0.5 bg-lime-300 p-2 text-black" style="--fa-rotate-angle: -45deg;"></i>
+                    </span>
+                  </a>
+
+                 </div>
+              </div>
+
+            </div>
+            <!-- Right Column -->
+            <div   class="lg:col-span-4 p-6  border rounded-2xl bg-white  border-[#e9e9e9] flex justify-center items-center " >
+              <!-- image Container -->
+             
+                <div  class="">
+                  <img class="w-full" src="assets/img2.png" alt="">
+                 </div>
+           
+               
+              
+            </div>
+
+           </div>
+
+
+           <!-- 2nd Grid -->
+
+           <div class="lg:grid lg:grid-cols-12 py-1 gap-x-4 gap-y-4 flex flex-col-reverse">
+            <!-- Left column -->
+            <div  class="lg:col-span-3 p-6  border rounded-2xl bg-white  border-[#e9e9e9] flex items-stretch  " >
+              <img class="w-full" src="assets/img3.png" alt="">
+            </div>
+
+            
+            <!-- Middle Column -->
+            <div class="lg:col-span-6 p-6  border rounded-2xl bg-white  border-[#e9e9e9]">
+              <div class="grid lg:grid-cols-2 gap-y-4">
+                <!-- Image Container -->
+              <div class=" flex items-stretch">
+                <img class="w-full" src="assets/article2.png" alt="">
+              </div>
+              <!-- Text container -->
+              <div  class=" pl-6  flex flex-col justify-start gap-y-10 ">
+                <h3 class="text-[24px] font-extrabold text-[#494949]">Apartmental</h3>
+                <p>Step into our latest apartment design project! Discover how we’ve redefined modern living with creative, stylish solutions. Don’t miss this inspiring transformation.</p>
+                <a class=" font-extrabold   text-[20px]">View Details
+                  <span>
+                    <i class="fa-solid fa-arrow-right fa-rotate-by rounded-full m-0.5 bg-lime-300 p-2 text-black" style="--fa-rotate-angle: -45deg;"></i>
+                  </span>
+                </a>
+
+               </div>
+
+              </div>
+              
+            </div>
+
+            <!-- Right Column -->
+
+            <div class="lg:col-span-3 p-6  border rounded-2xl bg-white  border-[#e9e9e9] flex items-stretch  " >
+              <img class="w-full" src="assets/img5.png" alt="">
+            </div>
+
+           </div>
+
+           <!-- Last Grid (Hidden in lg) -->
+
+           <div class=" grid grid-cols-1 md:hidden lg:hidden  p-6  border rounded-2xl bg-white  border-[#e9e9e9] my-4  " >
+            <img class="w-full" src="assets/img5.png" alt="">
+          </div>
+
+
+
+        </div>
+
+        
+
+
+
+       </section>
+
+
+       <!-- Next Project -->
+        
+        
+
+        <section class="bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover">
+          <div class="container mx-auto px-5 py-16">
+            <!-- Let's Connect -->
+            <div class="lg:p-8 flex justify-center my-0 ">
+
+              <div class=" ">
+                <a class="bg-lime-200 rounded-[24px] font-extrabold px-3 py-2 w-full  lg:w-1/5 text-center text-base"> <span>
+                  <i class="fa-solid fa-arrow-right  m-0.5  p-1 text-black" ></i>
+                </span>Let's Connect</a>
+    
+                  
+               
+             </div>
+    
+    
+    
+             </div>
+
+
+
+            <h1 class="my-5 text-center font-extrabold text-[24px] lg:text-[40px]">Let's Discuss Next Project</h1>
+            <p class="my-5 text-center text-[#494949] text-[14px] lg:text-base">
+              Ready to bring your vision to life? Contact us today to discuss your next commercial or residential project. We’re excited to collaborate and turn your ideas into reality.
+            </p>
+        
+            <!-- Input Taking Area -->
+                                                       <!-- stackoverflow suggested onsubmit="return false;"  -->
+            
+            <form  method="POST" action="#" onsubmit="return false;">
+              <!-- Input Fields -->
+              <div  class="lg:px-52 py-20">
+                <!-- Row 1 grid -->
+                <div class="grid lg:grid-cols-2 gap-4">
+                  <div>
+                    <input 
+                      type="text" 
+                      name="first_name" 
+                      placeholder="First Name*" 
+                      required 
+                      class="w-full px-4 py-5 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
+                  <div>
+                    <input 
+                      type="text" 
+                      name="last_name" 
+                      placeholder="Last Name*" 
+                      required 
+                      class="w-full px-4 py-5 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
+                </div>
+        
+                <!-- Row 2 Grid -->
+                <div class="grid lg:grid-cols-2 gap-4 my-4">
+                  <div>
+                    <input 
+                      type="tel" 
+                      name="phone" 
+                      placeholder="Phone Number*"  
+                      required 
+                      class="w-full px-4 py-5 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
+                  <div>
+                    <input 
+                      type="email" 
+                      name="email" 
+                      placeholder="Email Address*" 
+                      required 
+                      class="w-full px-4 py-5 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
+                </div>
+        
+                <!-- 3rd Row Grid -->
+                <div class="grid grid-rows-3 gap-4 my-4 h-64">
+                  <div class="row-span-3 h-full">
+                    <input 
+                      type="text" 
+                      name="message" 
+                      placeholder="Write your message here" 
+                     
+                      class="w-full h-full px-4 py-5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
+                </div>
+              </div>
+        
+              
+
+              <!-- Submit Button -->
+              <div class="px-8 flex justify-center mt-6">
+                <button 
+                  type="submit" 
+                  class="w-full max-w-screen-sm lg:max-w-fit bg-green-btn-bg rounded-3xl font-extrabold px-3 py-3 text-center cursor-pointer flex items-center justify-center"
+                >
+                  Send Mail
+                  <span class="ml-2">
+                    <i class="fa-solid fa-arrow-right fa-rotate-by rounded-full m-0.5 bg-[#1C1C1C] p-2 text-white" style="--fa-rotate-angle: -45deg;"></i>
+                  </span>
+                </button>
+              </div>
+
+
+            
+            </form>
+            <!-- Form End -->
+          </div>
+        </section>
+        
+
+
+        <!-- Our Success Story -->
+        <section class="bg-zinc-200">
+          <div class="container mx-auto px-5 py-16 ">
+            <h1  class=" my-5 text-center font-extrabold text-[24px] lg:text-[40px] ">Our Success Stories</h1>
+           <p class=" my-5 text-center text-[#494949]  text-[14px] lg:text-base">Discover our success stories showcasing stunning apartment and commercial designs. Our clients’ happiness speaks volumes about our commitment to excellence and innovation in every project.</p>
+
+           <!-- Success Story Cards -->
+          <div class="px-8 grid lg:grid-cols-4 gap-x-5 gap-y-5  lg:my-20  ">
+            <!-- Card 1 -->
+             <div class="bg-white px-4 py-10 shadow-lg rounded-lg">
+
+              <!-- Avatar -->
+              <div class="flex flex-col items-center justify-center gap-y-4">
+                <div class="avatar ">
+                  <div class="w-24 rounded-full">
+                    <img src="assets/pro-pic-1.jpg" />
+                  </div>
+                </div>
+                <!-- Name -->
+
+                <h2>Haezy Ronson</h2>
+                
+              </div>
+
+              <!-- Ratings -->
+              <div class="flex items-center justify-center my-3">
+                <div class="rating ">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked="checked"
+                    disabled />
+                </div>
+                
+                
+              </div>
+
+              <!-- Comment -->
+              <p class="text-center">Rinterio brought our wildest apartment design dreams to life.It's a breathtaking blend of beauty and function!</p>
+
+              
+              
+             </div>
+              <!-- Card 2 -->
+              <div class="bg-white px-4 py-10 shadow-lg rounded-lg">
+
+                <!-- Avatar -->
+                <div class="flex flex-col items-center justify-center gap-y-4">
+                  <div  class="avatar ">
+                    <div class="w-24 rounded-full">
+                      <img src="assets/pro-pic-2.jpg" />
+                    </div>
+                  </div>
+                  <!-- Name -->
+  
+                  <h2>Fabian Rosen</h2>
+                  
+                </div>
+  
+                <!-- Ratings -->
+                <div class="flex items-center justify-center my-3">
+                  <div class="rating ">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked="checked"
+                      disabled />
+                  </div>
+                  
+                  
+                </div>
+  
+                <!-- Comment -->
+                <p class="text-center">Exceptional design by Rinterio! Our commercial space is now both elegant and efficient.</p>
+  
+                
+                
+               </div>
+              <!-- Card 3 -->
+              <div class="bg-white px-4 py-10 shadow-lg rounded-lg">
+
+                <!-- Avatar -->
+                <div class="flex flex-col items-center justify-center gap-y-4">
+                  <div  class="avatar ">
+                    <div class="w-24 rounded-full">
+                      <img src="assets/pro-pic-3.jpg" />
+                    </div>
+                  </div>
+                  <!-- Name -->
+  
+                  <h2>Andres Cortino</h2>
+                  
+                </div>
+  
+                <!-- Ratings -->
+                <div class="flex items-center justify-center my-3">
+                  <div class="rating ">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked="checked"
+                      disabled />
+                  </div>
+                  
+                  
+                </div>
+  
+                <!-- Comment -->
+                <p class="text-center">Rinterio transformed our commercial space into a stylish and highly functional masterpiece.Truly impressive work!</p>
+  
+                
+                
+               </div>
+              <!-- Card 4 -->
+              <div class="bg-white px-4 py-10 shadow-lg rounded-lg">
+
+                <!-- Avatar -->
+                <div class="flex flex-col items-center justify-center gap-y-4">
+                  <div  class="avatar ">
+                    <div class="w-24 rounded-full">
+                      <img src="assets/pro-pic-4.jpg" />
+                    </div>
+                  </div>
+                  <!-- Name -->
+  
+                  <h2>Jimmy Samuel</h2>
+                  
+                </div>
+  
+                <!-- Ratings -->
+                <div class="flex items-center justify-center my-3">
+                  <div class="rating ">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                    <input
+                      type="radio"
+                      name="rating-2"
+                      class="mask mask-star-2 bg-orange-400"
+                      checked="checked"
+                      disabled />
+                  </div>
+                  
+                  
+                </div>
+  
+                <!-- Comment -->
+                <p class="text-center">Thanks to Rinterio, our commercial space perfectly blends style and practicality. Amazing work!</p>
+  
+                
+                
+               </div>
+
+          </div>
+
+          </div>
+
+          
+
+        </section>
+
+      
+       
+    </main>
+    <footer class="bg-[#1C1C1C]  pb-50">
+
+      <!-- All footer element  -->
+      <div class="container mx-auto py-24 px-8 flex flex-col items-center justify-center">
+
+        <!-- Footer title -->
+        <div class="mr-4 mb-4">
+          
+
+          <i class="fa-solid fa-arrow-right fa-rotate-by rounded-full m-1   bg-green-btn-bg p-[6px]  " style="--fa-rotate-angle: -45deg;""></i> 
+          <a class="text-[30px] text-white font-extrabold">Rinterio</a> 
+          
+
+      
+        
+      </div>
+
+        <!-- Footer Description  -->
+        <div class="mb-12">
+          <p class="text-center text-base text-[#737373]">Thrilled to collaborate with you! Eager to bring your vision to life. Looking forward to our next exciting project together!</p>
+        </div>
+
+
+        <!-- Footer Links -->
+      <div class="flex justify-center">
+        <ul class="flex flex-col lg:flex-row lg:justify-evenly lg:items-center lg:gap-x-36 gap-y-8">
+            <li class="flex justify-center"><a class="text-base text-center font-medium text-[#E9E9E9]" href="">Home</a></li>
+
+
+            <li class="flex justify-center"><a class="text-base text-center font-medium text-[#E9E9E9]" href="">Services</a></li>
+
+
+            <li class="flex justify-center"><a class="text-base text-center font-medium text-[#E9E9E9]" href="">Portfolio</a></li>
+
+
+            <li class="flex justify-center"><a class="text-base text-center font-medium text-[#E9E9E9]" href="">Blogs</a></li>
+            
+            <li class="flex justify-center"><a class="text-base text-center font-medium text-[#E9E9E9]" href="">Contact Us</a></li>
+        </ul>
+    </div>
+
+        
+  
+
+      
+        
+      </div>
+
+
+         <!-- Book consultant -->
+
+      
+
+         <div class="container mx-auto py-8">
+   
+          <div class="px-8 flex  justify-center">
+             
+              <a class="w-full  max-w-screen-sm lg:max-w-fit  bg-green-btn-bg rounded-3xl font-extrabold px-3 py-3 text-center"> 
+                  Book Consult
+                  <span>
+                      <i class="fa-solid fa-arrow-right fa-rotate-by rounded-full m-0.5 bg-[#1C1C1C] p-2 text-white" style="--fa-rotate-angle: -45deg;"></i>
+                  </span>
+              </a>
+              
+          </div>
+          <p class="text-sm text-center mt-10 text-[#737373]">
+            &copy; 2024 Rinterio. All rights reserved.
+          </p>
+      </div>
+
+   
+
+      
+
+
+
+
+    </footer>
+  </body>
+</html>
