@@ -26,6 +26,3 @@ Experience modern living with rustic charm. Our barn houses blend tradition with
 *   **"Our Success Stories" Section:** Displays testimonials from satisfied clients with ratings.
 *   **Footer:** Contains branding, a description, navigation links, a "Book Consult" button, and copyright information.
 
-## Live Site Link 🌐
-
-*(Please provide the link to be added here)* 
